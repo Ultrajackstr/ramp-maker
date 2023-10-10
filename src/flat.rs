@@ -95,7 +95,7 @@ where
 }
 
 /// The default numeric type used by [`Flat`]
-pub type DefaultNum = FixedU32<typenum::U16>;
+pub type DefaultNum = FixedU32<16>;
 
 #[cfg(test)]
 mod tests {

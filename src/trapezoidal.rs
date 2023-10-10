@@ -185,7 +185,7 @@ where
 }
 
 /// The default numeric type used by [`Trapezoidal`]
-pub type DefaultNum = fixed::FixedU64<typenum::U32>;
+pub type DefaultNum = fixed::FixedU64<32>;
 
 enum RampMode<Num> {
     Idle,

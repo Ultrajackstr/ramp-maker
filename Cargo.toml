@@ -18,12 +18,13 @@ std = [] # standard library support
 
 [dependencies]
 az         = "1.1.0"
-fixed-sqrt = "0.2.4"
-typenum    = "1.12.0"
+#fixed-sqrt = "0.2.4"
+fixed-sqrt =  {git = "https://github.com/Ultrajackstr/fixed-sqrt-rs.git", branch = "master"}
+#typenum    = "1.12.0"
 
 [dependencies.fixed]
-version  = "1.5.0"
-features = ["az", "num-traits"]
+version  = "2.0.0-alpha.12"
+#features = ["az", "num-traits"]
 
 [dependencies.libm]
 version  = "0.2.1"
