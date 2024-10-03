@@ -3,6 +3,7 @@
 //! See [`Flat`].
 
 use fixed::FixedU32;
+use typenum::U16;
 
 use crate::MotionProfile;
 
@@ -95,7 +96,7 @@ where
 }
 
 /// The default numeric type used by [`Flat`]
-pub type DefaultNum = FixedU32<16>;
+pub type DefaultNum = FixedU32<U16>;
 
 #[cfg(test)]
 mod tests {

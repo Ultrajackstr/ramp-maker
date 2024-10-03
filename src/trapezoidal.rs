@@ -6,6 +6,7 @@ use core::ops;
 
 use az::Az as _;
 use num_traits::{clamp_max, clamp_min};
+use typenum::U32;
 
 use crate::{
     util::traits::{Ceil, Sqrt},
@@ -185,7 +186,7 @@ where
 }
 
 /// The default numeric type used by [`Trapezoidal`]
-pub type DefaultNum = fixed::FixedU64<32>;
+pub type DefaultNum = fixed::FixedU64<U32>;
 
 enum RampMode<Num> {
     Idle,
